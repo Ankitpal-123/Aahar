@@ -8,7 +8,7 @@ const Navbar = () => {
           <img
             src="https://gdurl.com/0PTl"
             alt="aahar"
-            className="h-20  ml-20 -mt-3  "></img>
+            className="h-20  ml-20 -mt-0.2  "></img>
         </div>
         <div className="flex ml-15 col-span-4 justify-between  mt-2 text-lg font-bold">
           <a href="">HOME</a>
