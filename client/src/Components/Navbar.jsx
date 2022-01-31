@@ -8,9 +8,9 @@ const Navbar = () => {
           <img
             src="https://gdurl.com/0PTl"
             alt="aahar"
-            className="h-20  ml-20 -mt-0.2  "></img>
+            className="h-28  ml-20 -mt-3  "></img>
         </div>
-        <div className="flex ml-15 col-span-4 justify-between  mt-2 text-lg font-bold">
+        <div className="flex ml-15 col-span-4 justify-between  mt-2 text-lg font-semi-bold -ml-10">
           <a href="">HOME</a>
           <p>·</p>
           <a href="">MENU</a>
@@ -22,7 +22,7 @@ const Navbar = () => {
           <a href="">ABOUT</a>
         </div>
         <div className="col-span-3"></div>
-        <div className="flex col-span-2 justify-between mt-2 text-lg font-bold ">
+        <div className="flex col-span-2 justify-between mt-2 text-lg font-semi-bold ">
           <a href="">ADD RESTURANT</a>
           <p>·</p>
           <a href="">REGISTER</a>
