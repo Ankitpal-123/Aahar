@@ -10,7 +10,7 @@ const Navbar = () => {
             alt="aahar"
             className="h-28  ml-20 -mt-3  "></img>
         </div>
-        <div className="flex ml-15 col-span-4 justify-between  mt-2 text-lg font-semi-bold -ml-10">
+        <div className="flex -ml-10 col-span-4 justify-between  mt-2 text-lg font-semi-bold ">
           <a href="">HOME</a>
           <p>·</p>
           <a href="">MENU</a>
