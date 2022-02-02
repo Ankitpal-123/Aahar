@@ -3,6 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <>
+      <div className=""></div>
       <div className="flex items-center justify-around">
         <div>
           <img
@@ -10,7 +11,7 @@ const Header = () => {
             alt="indian cusine"
             className="h-96"
           />
-          <div className="flex items-center bg-amber-500 rounded-lg p-1 w-40 justify-between ml-28">
+          <div className="flex items-center bg-white rounded-3xl p-1 w-40 justify-between ml-28">
             <img
               src="https://gdurl.com/q5l0"
               alt="facebook"

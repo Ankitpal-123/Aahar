@@ -6,7 +6,7 @@ import Navbar from "../Components/Navbar";
 
 const landing = () => {
   return (
-    <div>
+    <div className="bg-orange-200 ">
       <Navbar />
       <Header />
       <Corausel />
