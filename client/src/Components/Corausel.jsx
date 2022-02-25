@@ -1,5 +1,8 @@
 import "./Corousel.css";
 import React from "react";
+import Slider from "react-slick";
+// import NextArrow from "./common/carousel/nextArrow";
+// import PrevArrow from "./common/carousel/prevArrow";
 
 const foodList = [
   {
@@ -52,6 +55,14 @@ const foodList = [
   },
 ];
 
+// const settings = {
+//   infinite: false,
+//   slidesToShow: 6,
+//   slidesToScroll: 1,
+//   nextArrow : <NextArrow />,
+//   prevArrow :<PrevArrow/>
+// };
+
 const Corausel = () => {
   return (
     <>
@@ -69,6 +80,19 @@ const Corausel = () => {
 
         <div className="w-1/2 ">
           {/* slider */}
+          {/* <Slider {...settings}>
+            {foodList.map((food) => (
+              <div className="bg-orange-300 rounded-xl min-h-fit min-w-fit">
+                <img
+                  src={food.image}
+                  alt={food.name}
+                  className="w-40 h-40 object-cover rounded-tl-xl rounded-tr-xl "
+                />
+                <p className="p-2 font-semibold">{food.name}</p>
+              </div>
+            ))}
+          </Slider> */}
+
           <div className="flex space-x-2 scroll-bar overflow-hidden hover:overflow-x-scroll">
             {foodList.map((food) => {
               return (
@@ -84,44 +108,6 @@ const Corausel = () => {
             })}
           </div>
         </div>
-
-        {/*  
-        <div className=" ">
-          <div className="flex gap-2 ">
-            <div className="card  justify-center   ">
-              <div className="rounded-lg m-w-sm ">
-                <img
-                  src="https://gdurl.com/zqD2"
-                  alt="matarpanir"
-                  className="h-44 "
-                />
-              </div>
-              <div className="p-6">
-                <p>Mattar Paneer</p>
-              </div>
-            </div>
-            <div className="card justify-center ">
-              <div className="rounded-lg m-w-sm">
-                <img
-                  src="https://gdurl.com/Xa2U"
-                  alt="pav-bhaji"
-                  className="h-44"
-                />
-              </div>
-              <div className="p-6">
-                <p>Pav Baji</p>
-              </div>
-            </div>
-            <div className="card justify-center">
-              <div className="rounded-lg m-w-sm">
-                <img src="https://gdurl.com/7Uf7P" alt="" className="h-44" />
-              </div>
-              <div className="p-6">
-                <p>pavbwcb</p>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     </>
   );

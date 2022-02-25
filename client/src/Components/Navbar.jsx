@@ -1,33 +1,50 @@
 import React from "react";
+import { Link } from "react-router-dom";
+// import Login from "../screens/Login";
 
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-black  py-4 grid grid-cols-12 text-white h-20 mx-100">
-        <div className="col-span-2">
-          <img
-            src="https://gdurl.com/0PTl"
-            alt="aahar"
-            className="h-28  ml-20 -mt-3  "></img>
-        </div>
-        <div className="flex -ml-10 col-span-4 justify-between  mt-2 text-lg font-semi-bold ">
-          <a href="">HOME</a>
-          <p>·</p>
-          <a href="">MENU</a>
-          <p>·</p>
-          <a href="">ORDER</a>
-          <p>·</p>
-          <a href="">NEAR ME</a>
-          <p>·</p>
-          <a href="">ABOUT</a>
-        </div>
-        <div className="col-span-3"></div>
-        <div className="flex col-span-2 justify-between mt-2 text-lg font-semi-bold ">
-          <a href="">ADD RESTURANT</a>
-          <p>·</p>
-          <a href="">REGISTER</a>
-        </div>
-      </nav>
+      <div className="">
+        <nav className="bg-black  py-4 flex justify-between flex-grow items-center   text-white h-20 mx-auto">
+          <div className="">
+            <img
+              src="https://gdurl.com/0PTl"
+              alt="aahar"
+              className="h-28  sm:ml-20 ml-5 mt-10 
+              cursor-pointer "></img>
+          </div>
+
+          <div className="hidden  md:flex ml-10 flex-grow justify-start text-lg font-semi-bold ">
+            <Link to="/" className=" courser-pointer">
+              HOME
+            </Link>
+            <a href=""></a>
+
+            <a href="" className="ml-5 courser-pointer">
+              MENU
+            </a>
+            <a href="" className="ml-5 courser-pointer">
+              ORDER
+            </a>
+            <a href="" className="ml-5 courser-pointer">
+              NEAR ME
+            </a>
+            <a href="" className="ml-5 courser-pointer">
+              ABOUT
+            </a>
+          </div>
+
+          <div className=" hidden sm:flex text-lg font-semi-bold ">
+            <a href="">ADD RESTURANT</a>
+          </div>
+          <div className="  sm:ml-5  mr-5 sm:mr-5">
+            <button className="rounded-md bg-amber-600 h-10 w-28 text-xl text-white font-semi-bold ">
+              <Link to="/login">LOGIN</Link>
+            </button>
+          </div>
+        </nav>
+      </div>
     </>
   );
 };

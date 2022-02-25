@@ -4,6 +4,7 @@ import Footer from "../Components/Footer";
 import HDAW from "../Components/HDAW";
 import Header from "../Components/Header";
 import Navbar from "../Components/Navbar";
+// import { Routes, Route } from "react-router-dom";
 
 const landing = () => {
   return (

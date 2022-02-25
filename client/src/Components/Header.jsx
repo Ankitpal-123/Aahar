@@ -4,14 +4,14 @@ const Header = () => {
   return (
     <>
       <div className=""></div>
-      <div className="flex items-center justify-around">
+      <div className="mx-auto sm:flex items-center justify-around">
         <div>
           <img
             src="https://gdurl.com/KE4A"
             alt="indian cusine"
-            className="h-96"
+            className="h-64 mx-auto sm:h-96"
           />
-          <div className="flex items-center bg-white rounded-3xl p-1 w-40 justify-between ml-28">
+          <div className="flex items-center  bg-white rounded-3xl p-1 w-40 justify-between  ml-40 sm:ml-28">
             <img
               src="https://gdurl.com/q5l0"
               alt="facebook"
@@ -30,11 +30,11 @@ const Header = () => {
           </div>
         </div>
         <div>
-          <div className="mb-10">
-            <p className="text-4xl text-extrabold leading-relaxed max-w-screen-sm">
+          <div className="mb-10 mt-5">
+            <p className="text-2xl sm:text-4xl  ml-8 text-extrabold leading-relaxed sm:max-w-screen-sm">
               जब भूख से पेट में एंठन आ जाती है माँ, तेरी रोटी बोहोत याद आती है
             </p>
-            <p className="text-amber-600 text-xl text-bold ml-96">
+            <p className="text-amber-600 mx-auto text-xl text-bold ml-44 sm:ml-96">
               -- MAGARSAHEB
             </p>
           </div>
